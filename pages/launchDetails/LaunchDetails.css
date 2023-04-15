@@ -1,0 +1,111 @@
+:root{
+    --bgCard:var(--bgcard):rgba(255, 255, 255,0.7);
+    --bgButton: rebeccapurple;
+    --letterColor:#fdfcc9 
+}
+
+
+
+.Content{
+    position: relative ;
+    width: 100% ;
+    min-height: 100vh ;
+    background: linear-gradient(rgb(200, 219, 253),rebeccapurple );
+    display: flex;
+    align-items: center ;
+    justify-content: center;
+    
+}
+.launchDetail{
+    position: relative;
+    width: 90% ;
+    height: 90% ;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.rocket{
+    position: relative ; 
+    width: 100% ;
+    height: 100%;
+    
+}
+.rocket span{
+    position: relative;
+    color: var(--letterColor) ;
+    font-size: 5vw ;
+    font-weight: bolder;
+    height: 50%;
+}
+.buttonCont{
+    position: relative;
+    width: 100%;
+    height: 50%;
+}
+.rocket span, .buttonCont{
+    display: flex ;
+    align-items: center ;
+    justify-content: center;
+}
+.button{
+    background: var(--bgButton);
+    width: 150px ;
+    height: 50px;
+    border-radius: 20px ;
+    color: var(--letterColor);
+    transition: 0.2s;
+    display: flex ;
+    align-items: center ;
+    justify-content: center;
+}
+.button{
+    cursor: pointer;
+}
+.button:hover{
+    background: rgb(74, 29, 119);
+}
+
+.list{
+    display: flex ;
+    align-items: center ;
+    justify-content: center ;
+    width: 100% ;
+    height: 100%;
+    
+    
+}
+.list ul{
+    list-style: none;
+    color: rgb(54, 53, 53);
+    position: relative ;
+    width: 70% ;
+}
+.list ul li{
+    margin: 20px;
+    background: rgba(255, 255, 255,0.5);
+    backdrop-filter: blur(300px);
+    width: 100% ;
+    padding: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 6px 11px 69px 0px rgba(71, 78, 90, 0.61);
+    -moz-box-shadow: 6px 11px 69px 0px rgba(71, 78, 90, 0.61);
+    box-shadow: 6px 11px 69px 0px rgba(71, 78, 90, 0.61);
+    transition: 0.5s;
+}
+li:hover{
+    background: rgba(255, 255, 255,0.7);
+    animation: animate 2s ease-in-out  infinite normal ;
+}
+
+@keyframes animate {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform:  translateY(0px);
+    }
+
+}
+

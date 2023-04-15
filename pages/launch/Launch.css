@@ -1,0 +1,60 @@
+:root{
+    --bgCard:var(--bgcard):rgba(255, 255, 255,0.7);
+    --bgButton: rebeccapurple;
+    --letterColor:#fdfcc9 
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.LaunchListCont{
+    position: relative ;
+    width: 100% ;
+    min-height: 100vh ;
+    background: linear-gradient(rgb(200, 219, 253),rebeccapurple );
+    
+}
+.headerBx,.cardContainer{
+    position: relative ;
+    width: 90% ;
+    min-height: 90vh;
+    display: flex ;
+    align-items: center ;
+    justify-content: center ;
+    margin: 0 auto;
+    
+    
+}
+.cardContainer{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(550px, 1fr))
+    
+}
+
+.up{
+    font-size:1.5em ;
+    
+}
+.RefreshButton{
+    position: relative;
+    margin: 0 auto;
+    width: 200px;
+    height: 60px;
+    background: var(--bgButton);
+    border-radius: 20px;
+    font-size: 1.8em;
+    color: var(--letterColor) ;
+    display: flex ;
+    align-items: center ;
+    justify-content: center; 
+    top: 20px;
+    cursor: pointer ;
+    transition: 0.5s;
+}
+
+
