@@ -1,7 +1,7 @@
 import axios from "axios";
 import {useState,useEffect} from "react"
 import "./Launch.css"
-import Card from "../components/card/Card";
+import Card from "../../components/card/Card";
 
 
 const upcomingUrl = "/api/launch/upcoming"; 
